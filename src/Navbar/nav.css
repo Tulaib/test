@@ -1,0 +1,211 @@
+.navbar-container {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  background-color: #f29292;
+  width: 100%;
+  grid-template-columns: 5rem 1fr 2fr 1fr 5rem;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+.logo {
+  /* background-color: azure; */
+  grid-column: 2/3;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-size: 3rem;
+}
+.logo a {
+  color: #65b8bf;
+}
+.menu-item {
+  grid-column: 3/4;
+  /* justify-content: start; */
+}
+
+
+.mobile-menu-item ul li:first-child{
+    transition-delay: 0.2s;
+}
+.button {
+  grid-column: 4/5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* CSS */
+.button-39 {
+  background-color: #65b8bf;
+  border: 1px solid rgb(209, 213, 219);
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.875rem;
+  font-weight: bolder;
+  line-height: 1.25rem;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  text-decoration: none #d1d5db solid;
+  text-decoration-thickness: auto;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-39:hover {
+  background-color: rgb(249, 250, 251);
+  color: #65b8bf;
+  transition: ease-in 0.3s;
+}
+
+.button-39:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.button-39:focus-visible {
+  box-shadow: none;
+}
+.btn-style {
+  height: 50%;
+  width: 40%;
+  /* border-color:white; */
+  color: white;
+  /* border: 1px solid ; */
+  border-radius: 5px;
+  /* border-style:; */
+  background-color: #65b8bf;
+}
+.menu-item ul {
+  display: flex;
+  height: 5rem;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.menu-item ul li > a {
+  color: white;
+  font-size: 1.5rem;
+}
+.menu-item ul li:hover > a {
+  transform-origin: left;
+  /* background-color: #ffff; */
+  color: rgba(0, 0, 4, 0.3);
+  text-decoration: underline;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.hamburger-icon {
+  font-size: 2rem;
+  display: none;
+  color: white;
+  padding-top: 10px;
+}
+.button .hamburger-icon a {
+  text-decoration: none;
+  color: white;
+}
+li {
+  list-style: none;
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1024px) {
+  .menu-item {
+    display: none;
+  }
+  .logo a {
+    font-size: 2rem;
+  }
+  .button-39 {
+    display: none;
+  }
+  .hamburger-icon {
+    font-size: 2rem;
+    display: block;
+    color: white;
+  }
+  .button{
+  grid-column: 5/6;
+
+  }
+  .button .hamburger-icon {
+    float: right;
+} 
+.mobile-menu-item {
+    grid-column: 2/5;
+    position: relative;
+    z-index: 99;
+    transition: all 2s linear;
+
+  }
+.mobile-menu-item ul{
+    background-color: white;
+    height: 20rem;
+    display: grid;
+    grid-column: 2/5;
+    align-items: center;
+    padding-left: 3rem;
+    transition: all 1s ;
+    transform-origin: top;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.mobile-menu-item ul {
+    height: 20rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .mobile-menu-item ul li:first-child {
+    transition-delay: 0.2s;
+  }
+  .button {
+    grid-row: 1/2;
+    grid-column: 3/5;
+    justify-items: end;
+    align-items: center;
+    transition: all 2s linear;
+  }
+
+}
+
+
+@media screen and (max-width: 600px) {
+  .menu-item {
+    display: none;
+  }
+  .logo a {
+    font-size: 2rem;
+  }
+  .social-media {
+    height: 6rem;
+    display: flex;
+    justify-self: end;
+    align-items: center;
+  }
+
+  .social-media .hamburger-menu {
+    display: block;
+    font-size: 2.5rem;
+  } 
+}
