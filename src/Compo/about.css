@@ -1,0 +1,17 @@
+.heading{
+    font-size: 8rem;
+    background: -webkit-linear-gradient(#65b8bf, #f29292);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#about p{
+    padding: 50px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+@media only screen and (max-width: 768px) {
+.heading{
+    font-size: 4rem;
+
+}
+}

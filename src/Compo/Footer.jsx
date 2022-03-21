@@ -32,13 +32,13 @@ function Footer() {
               <a href="">Your Account</a>
             </li>
             <li>
-              <a href="">Email</a>
+              <a href="https://github.com/Tulaib/test" target={'blank'}>This Project Link</a>
             </li>
             <li>
               <a href="">Help</a>
             </li>
             <li>
-              <a href="">Rates</a>
+              <a href="">Ratings</a>
             </li>
           </ul>
         </div>
