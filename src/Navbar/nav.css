@@ -28,7 +28,7 @@
 
 
 .mobile-menu-item ul li:first-child{
-    transition-delay: 0.2s;
+    transition-delay: 0.8 s;
 }
 .button {
   grid-column: 4/5;
@@ -90,6 +90,8 @@
   /* justify-content: center; */
   align-items: center;
   flex-direction: row;
+  transition: all 1s ;
+
   justify-content: space-around;
 }
 .menu-item ul li > a {
@@ -130,6 +132,8 @@ a {
 @media screen and (max-width: 1024px) {
   .menu-item {
     display: none;
+    transition: all 1s ;
+
   }
   .logo a {
     font-size: 2rem;
@@ -150,8 +154,16 @@ a {
     float: right;
 } 
 .mobile-menu-item {
-    grid-column: 2/5;
+    grid-column: 1/-1;
     position: relative;
+    top: 22px;
+    transition: all 1s ;
+
+    width: 100%;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    left: 0%;
     z-index: 99;
     transition: all 2s linear;
 
@@ -162,18 +174,21 @@ a {
     display: grid;
     grid-column: 2/5;
     align-items: center;
-    padding-left: 3rem;
+    /* padding-left: 3rem; */
     transition: all 1s ;
     transform-origin: top;
+ 
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
       rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 .mobile-menu-item ul {
-    height: 20rem;
+    /* height: 20rem; */
     display: flex;
     justify-content: space-around;
+    /* justify-content: center; */
+    align-items: center;
     flex-direction: column;
-    align-items: start;
+    /* align-items: start; */
   }
 
   .mobile-menu-item ul li:first-child {

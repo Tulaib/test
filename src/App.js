@@ -5,14 +5,20 @@ import Home from './Compo/Home';
 import About from './Compo/About';
 import { sliderData } from './Compo/SliderData'
 import Footer from './Compo/Footer';
+import SideBar from './Compo/SideBar';
+import Todo from './Compo/Todo';
 
 function App() {
   return (
     <div >
-      <Navbar/>
+      {/* <Navbar/>
+      <SideBar />
       <Home slides={sliderData}/>
       <About />
-      <Footer  />
+      <Footer  /> */}
+
+      <Todo/>
+
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './nav.css'
 import {GiHamburgerMenu} from 'react-icons/gi'
+import SideBar from '../Compo/SideBar'
 function Navbar() {
 
 
